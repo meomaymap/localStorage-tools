@@ -38,9 +38,16 @@
              * Testing cross-domain storage
              */
             cdstorage = crossDomainStorage({
+                origin: "https://meomaymap.github.io", 
+                path: "/localStorage-tools/crossd_iframe.html"
+            });
+            
+            /*
+            cdstorage = crossDomainStorage({
                 origin: "http://localhost", 
                 path: "/localStorage/crossd_iframe.html"
             });
+            */
 
             //Now we can use the object to set or get values from a shared localStorage space:
 
